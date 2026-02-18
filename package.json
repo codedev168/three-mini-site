@@ -1,0 +1,35 @@
+{
+  "name": "@codedev168/three-mini-site",
+  "version": "1.0.0",
+  "description": "A tiny helper to bootstrap a small three.js mini site (scene, camera, renderer, and a demo cube).",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "vitest",
+    "lint": "echo \"no linter configured\"",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "threejs",
+    "three",
+    "mini",
+    "site",
+    "webgl"
+  ],
+  "author": "codedev168",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vitest": "^1.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "peerDependencies": {
+    "three": "*"
+  },
+  "type": "module"
+}
